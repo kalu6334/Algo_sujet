@@ -6,7 +6,7 @@ const data = fs.readFileSync(fileName, 'utf8');
 
 const list = data.split(' ').map((number) => Number.parseInt(number));
 
-class Exercice4 {
+class Exos4 {
     constructor(list) {
         this.list = list;
         this.sort(this.list);
@@ -22,4 +22,4 @@ class Exercice4 {
         console.log(`${building} immeubles voient le coucher du soleil`);
     }
 }
-new Exercice4(list);
+new Exos4(list);
